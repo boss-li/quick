@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{137170a8-6118-44a5-abf0-0c7a89acc025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread\win">
+      <UniqueIdentifier>{d767ef62-9beb-464d-b7ac-65fb563bae99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{524f202b-eff1-4388-a02d-6038e61f32c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="congestion_control">
+      <UniqueIdentifier>{d2b43f0d-3a5f-4c9f-9254-36300957e0f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="quick.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quick_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\event.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\module.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\platform_thread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\platform_thread_types.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\process_thread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\process_thread_impl.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\queued_task.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\repeating_task.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\sequence_checker.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\task_queue.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\task_queue_base.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\task_queue_factory.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\thread_checker.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\to_queued_task.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\utility.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thread\win\task_queue_win.h">
+      <Filter>thread\win</Filter>
+    </ClInclude>
+    <ClInclude Include="udp_socket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="packet_reader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\log\LogWrapper.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="quick_connection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quick_proto.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\send_algorithm_interface.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_bandwidth.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_constants.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_types.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_time.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_clock.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\bbr2_drain.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\bbr2_misc.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\bbr2_probe_bw.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\bbr2_probe_rtt.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\bbr2_sender.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\bbr2_startup.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\bandwidth_sampler.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\rtt_stats.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\windowed_filter.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_packet_number.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_circular_deque.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_unacked_packet_map.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_connection_stats.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\packet_number_indexed_queue.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_time_accumulator.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\quic_clock_impl.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\congestion_control\pacing_sender.h">
+      <Filter>congestion_control</Filter>
+    </ClInclude>
+    <ClInclude Include="quick_packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ring_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="received_packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ack_thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="quick_impl.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\event.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\platform_thread.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\platform_thread_types.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\process_thread_impl.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\repeating_task.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\sequence_checker.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\task_queue.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\task_queue_base.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\win\task_queue_factory_win.cc">
+      <Filter>thread\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\win\task_queue_win.cc">
+      <Filter>thread\win</Filter>
+    </ClCompile>
+    <ClCompile Include="udp_socket.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="packet_reader.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\log\LogWrapper.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thread\utility.cc">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="quick_connection.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\send_algorithm_interface.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\quic_bandwidth.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\quic_clock.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\quic_time.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\bbr2_drain.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\bbr2_misc.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\bbr2_probe_bw.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\bbr2_probe_rtt.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\bbr2_sender.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\bbr2_startup.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\bandwidth_sampler.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\rtt_stats.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\quic_packet_number.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\quic_unacked_packet_map.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\congestion_control\pacing_sender.cc">
+      <Filter>congestion_control</Filter>
+    </ClCompile>
+    <ClCompile Include="quick_packet.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ack_thread.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

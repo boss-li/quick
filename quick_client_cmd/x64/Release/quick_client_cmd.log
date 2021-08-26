@@ -1,0 +1,9 @@
+﻿  simple_client.cc
+d:\private-projects\quick\thread\utility.h(26): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\private-projects\quick\quick_client_cmd\simple_client.cc(35): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\ucrt\time.h(495): note: 参见“localtime”的声明
+d:\private-projects\quick\quick_client_cmd\simple_client.cc(118): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\private-projects\quick\quick_client_cmd\simple_client.cc(136): error C4996: '_open': This function or variable may be unsafe. Consider using _sopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.19041.0\ucrt\corecrt_io.h(392): note: 参见“_open”的声明
+d:\private-projects\quick\quick_client_cmd\simple_client.cc(175): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\private-projects\quick\quick_client_cmd\simple_client.cc(196): warning C4552: ”!=“: 未使用表达式结果

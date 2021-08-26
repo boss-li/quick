@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D37E050B-9B1B-48E3-8FE2-166780B5F47B}</ProjectGuid>
+    <RootNamespace>quick</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\congestion_control\bandwidth_sampler.h" />
+    <ClInclude Include="..\congestion_control\bbr2_drain.h" />
+    <ClInclude Include="..\congestion_control\bbr2_misc.h" />
+    <ClInclude Include="..\congestion_control\bbr2_probe_bw.h" />
+    <ClInclude Include="..\congestion_control\bbr2_probe_rtt.h" />
+    <ClInclude Include="..\congestion_control\bbr2_sender.h" />
+    <ClInclude Include="..\congestion_control\bbr2_startup.h" />
+    <ClInclude Include="..\congestion_control\pacing_sender.h" />
+    <ClInclude Include="..\congestion_control\packet_number_indexed_queue.h" />
+    <ClInclude Include="..\congestion_control\quic_clock_impl.h" />
+    <ClInclude Include="..\congestion_control\quic_bandwidth.h" />
+    <ClInclude Include="..\congestion_control\quic_circular_deque.h" />
+    <ClInclude Include="..\congestion_control\quic_clock.h" />
+    <ClInclude Include="..\congestion_control\quic_connection_stats.h" />
+    <ClInclude Include="..\congestion_control\quic_constants.h" />
+    <ClInclude Include="..\congestion_control\quic_packet_number.h" />
+    <ClInclude Include="..\congestion_control\quic_time.h" />
+    <ClInclude Include="..\congestion_control\quic_time_accumulator.h" />
+    <ClInclude Include="..\congestion_control\quic_types.h" />
+    <ClInclude Include="..\congestion_control\quic_unacked_packet_map.h" />
+    <ClInclude Include="..\congestion_control\rtt_stats.h" />
+    <ClInclude Include="..\congestion_control\send_algorithm_interface.h" />
+    <ClInclude Include="..\congestion_control\windowed_filter.h" />
+    <ClInclude Include="..\log\LogWrapper.h" />
+    <ClInclude Include="..\thread\event.h" />
+    <ClInclude Include="..\thread\module.h" />
+    <ClInclude Include="..\thread\platform_thread.h" />
+    <ClInclude Include="..\thread\platform_thread_types.h" />
+    <ClInclude Include="..\thread\process_thread.h" />
+    <ClInclude Include="..\thread\process_thread_impl.h" />
+    <ClInclude Include="..\thread\queued_task.h" />
+    <ClInclude Include="..\thread\repeating_task.h" />
+    <ClInclude Include="..\thread\sequence_checker.h" />
+    <ClInclude Include="..\thread\task_queue.h" />
+    <ClInclude Include="..\thread\task_queue_base.h" />
+    <ClInclude Include="..\thread\task_queue_factory.h" />
+    <ClInclude Include="..\thread\thread_checker.h" />
+    <ClInclude Include="..\thread\to_queued_task.h" />
+    <ClInclude Include="..\thread\utility.h" />
+    <ClInclude Include="..\thread\win\task_queue_win.h" />
+    <ClInclude Include="ack_thread.h" />
+    <ClInclude Include="packet_reader.h" />
+    <ClInclude Include="quick.h" />
+    <ClInclude Include="quick_connection.h" />
+    <ClInclude Include="quick_impl.h" />
+    <ClInclude Include="quick_packet.h" />
+    <ClInclude Include="quick_proto.h" />
+    <ClInclude Include="received_packet.h" />
+    <ClInclude Include="ring_buffer.h" />
+    <ClInclude Include="udp_socket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\congestion_control\bandwidth_sampler.cc" />
+    <ClCompile Include="..\congestion_control\bbr2_drain.cc" />
+    <ClCompile Include="..\congestion_control\bbr2_misc.cc" />
+    <ClCompile Include="..\congestion_control\bbr2_probe_bw.cc" />
+    <ClCompile Include="..\congestion_control\bbr2_probe_rtt.cc" />
+    <ClCompile Include="..\congestion_control\bbr2_sender.cc" />
+    <ClCompile Include="..\congestion_control\bbr2_startup.cc" />
+    <ClCompile Include="..\congestion_control\pacing_sender.cc" />
+    <ClCompile Include="..\congestion_control\quic_clock.cc" />
+    <ClCompile Include="..\congestion_control\quic_bandwidth.cc" />
+    <ClCompile Include="..\congestion_control\quic_packet_number.cc" />
+    <ClCompile Include="..\congestion_control\quic_time.cc" />
+    <ClCompile Include="..\congestion_control\quic_unacked_packet_map.cc" />
+    <ClCompile Include="..\congestion_control\rtt_stats.cc" />
+    <ClCompile Include="..\congestion_control\send_algorithm_interface.cc" />
+    <ClCompile Include="..\log\LogWrapper.cpp" />
+    <ClCompile Include="..\thread\event.cc" />
+    <ClCompile Include="..\thread\platform_thread.cc" />
+    <ClCompile Include="..\thread\platform_thread_types.cc" />
+    <ClCompile Include="..\thread\process_thread_impl.cc" />
+    <ClCompile Include="..\thread\repeating_task.cc" />
+    <ClCompile Include="..\thread\sequence_checker.cc" />
+    <ClCompile Include="..\thread\task_queue.cc" />
+    <ClCompile Include="..\thread\task_queue_base.cc" />
+    <ClCompile Include="..\thread\utility.cc" />
+    <ClCompile Include="..\thread\win\task_queue_factory_win.cc" />
+    <ClCompile Include="..\thread\win\task_queue_win.cc" />
+    <ClCompile Include="ack_thread.cc" />
+    <ClCompile Include="packet_reader.cc" />
+    <ClCompile Include="quick_connection.cc" />
+    <ClCompile Include="quick_impl.cc" />
+    <ClCompile Include="quick_packet.cc" />
+    <ClCompile Include="udp_socket.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
