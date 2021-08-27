@@ -32,6 +32,10 @@ int main(int argc, char* argv[])
 	}
 	uint16_t local_port = 0;
 	ParseParams(argc, argv, local_port);
+	if (local_port == 0) {
+		PrintUsage();
+		return -1;
+	}
 	std::unique_ptr<SimpleServer> server(new SimpleServer(local_port));
 	while (g_running) {
 		server->Process();

@@ -35,7 +35,7 @@ void OutputDebugInfo(const char* format, ...)
 	auto v = std::put_time(std::localtime(&now_time), "%Y-%m-%d %X");
 	std::stringstream ss;
 	ss << v;
-	printf("%s %s\r\n", ss.str().c_str(), buf);
+	printf("%s %s\r\n>", ss.str().c_str(), buf);
 }
 
 SimpleClient::SimpleClient(uint16_t local_port, const std::string& server_ip, uint16_t server_port, const std::string& send_file)

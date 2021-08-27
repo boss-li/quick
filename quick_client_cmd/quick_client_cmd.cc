@@ -19,7 +19,7 @@
 void PrintUsage() {
 	std::cout << "quick_client_cmd -local_port=xxx -server_ip=xxx.xxx.xxx.xxx -server_port=xxx -file=/home/xxx.xxx[optional]\r\n";
 	std::cout << "if no -file parameter, quick_client_cmd will loop send verbose msg to server\r\n";
-	std::cout << "press ctrl + c to start/stop send\r\n";
+	std::cout << "press key p and enter to start/stop send\r\n";
 }
 
 void ParseParams(int argc, char* argv[], uint16_t &local_port, std::string& server_ip, 
@@ -84,24 +84,36 @@ void StopSend(int signo) {
 	g_sending = !g_sending;
 }
 
+void WaitInputThread() {
+	std::string input;
+	while (true) {
+		std::cin >> input;
+		if (input == "p")
+			g_sending = !g_sending;
+		std::cout << ">";
+	}
+}
+
 int main(int argc, char* argv[])
 {
 	if (argc < 4) {
 		PrintUsage();
 		return -1;
 	}
+
+	std::thread  input_thread(WaitInputThread);
+
 	uint16_t local_port = 0;
 	std::string server_ip;
 	uint16_t server_port = 0;
 	std::string send_file;
-	//printf("send_file = %s\r\n", send_file.c_str());
 	ParseParams(argc, argv, local_port, server_ip, server_port, send_file);
 	std::unique_ptr<SimpleClient> client(new SimpleClient(local_port, server_ip, server_port, send_file));
 
 #ifdef _WIN32
-	SetConsoleCtrlHandler((PHANDLER_ROUTINE)KeyEventHandler, true);
+//	SetConsoleCtrlHandler((PHANDLER_ROUTINE)KeyEventHandler, true);
 #else
-	signal(SIGINT, StopSend);
+//	signal(SIGINT, StopSend);
 #endif
 
 	while (g_running) {
@@ -113,6 +125,7 @@ int main(int argc, char* argv[])
 		}
 	}
 	client->PrintInfo();
+	input_thread.join();
 	std::this_thread::sleep_for(std::chrono::milliseconds(1500));
 }
 
