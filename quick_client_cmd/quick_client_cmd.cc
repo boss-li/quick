@@ -66,11 +66,11 @@ bool g_sending = true;
 bool KeyEventHandler(DWORD ctrl_type) {
 	switch (ctrl_type) {
 	case CTRL_C_EVENT:
-		g_running = false;
+		g_sending = !g_sending;
 		return true;
 		break;
 	case CTRL_BREAK_EVENT:
-		g_sending = !g_sending;
+		g_running = false;
 		return true;
 		break;
 	default:
